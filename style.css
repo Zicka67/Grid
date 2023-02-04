@@ -1,0 +1,328 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background-color: rgba(221, 221, 221, 0.726);
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+} 
+
+
+
+
+
+
+
+.container {
+    /* width: 1440px; */
+}
+
+.container-bis {
+    width: 100%;
+    margin: 20px 20px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 20px;
+    grid-template-areas: 
+    'un'
+    'deux'
+    'trois'
+    'quatre'
+    'cinq';
+}
+
+.border {
+    border: solid 1px inherit;
+    border-radius: 8px;
+}
+
+
+.title {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+
+.img-avatar {
+    border-radius: 50%;
+    margin-top: 2px;
+    
+}
+
+
+.avatar {
+    float: right;
+    margin-top: 10px;
+}
+
+
+.sub-title {
+    margin-top: 13px;
+    
+}
+
+
+.sub-title h2 {
+    margin-top: 0px;
+    
+}
+
+
+.first-text {
+    margin-bottom: 20px;
+    
+}
+
+.pattern {
+    
+    margin-top: 20px;
+    opacity: 100%;
+    float: right;
+    margin-top: -50px;
+    margin-right: 20px;
+    
+}
+
+
+.text {
+    text-align: left;
+    padding-bottom: 30px;
+    letter-spacing: -0.05em;
+    line-height: 20px;
+}
+
+.text-bold {
+    font-weight: bold;   
+    font-size: 20px;
+    letter-spacing: -0.014em;
+    line-height: 30px;
+    margin-top: 20px !important;
+}
+
+
+h1 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+
+h2 {
+    font-size: 13px;
+}
+
+
+h1,
+h2 {
+    font-family: Barlow Semi Condensed, sans-serif;
+    margin-left: -15px;
+}
+
+
+h1,
+h2,
+title,
+p {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+
+.text,
+.text-bold {
+    font-family: Barlow Semi Condensed, sans-serif;
+    margin-top: 0px;
+}
+
+
+
+.big-square-blue {
+    background-color: hsl(219, 29%, 14%);
+    
+}
+
+.big-square-blue .text,
+.big-square-blue h2  {
+    color: rgba(255, 255, 255, 0.527);
+    
+}
+
+
+.big-square-purple {
+    background-color: hsl(263, 55%, 52%);
+    margin-top: 30px;
+}
+
+.small-square-dark {
+    background-color: hsl(217, 19%, 35%);
+    
+}
+
+.small-square-dark .text,
+.small-square-dark h2
+{
+    color: rgba(211, 207, 207, 0.767);
+    
+}
+
+.small-square-white {
+    background-color: hsl(0, 0%, 100%);
+    
+}
+
+.small-square-white .text,
+.small-square-white h2
+{
+    color: rgba(105, 99, 99, 0.74);
+    
+}
+
+
+.long-square {
+    background-color: hsl(0, 0%, 100%);
+    
+}
+
+.long-square .text,
+.long-square h2 {
+    color: rgba(105, 99, 99, 0.74);
+}
+
+
+.white {
+    color: white;
+    
+}
+
+
+.pink {
+    color: rgb(177, 138, 189);
+    
+}
+
+.big-square-purple {
+    grid-area: un;
+}
+
+.big-square-blue {
+    grid-area: deux;
+    
+}
+
+.small-square-dark {
+    grid-area: trois;
+    
+}
+
+.small-square-white {
+    grid-area: quatre;
+    
+}
+
+.long-square {
+    grid-area: cinq;
+    
+}
+
+
+
+@media only screen and (max-width: 345px) {
+    .pattern {
+        display: none;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 530px) {
+    .container-bis {
+        grid-template-areas: 
+        "un un"
+        "trois quatre"
+        "cinq cinq"
+        "deux deux";
+        
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .container-bis {
+        grid-template-areas: 
+        "un un"
+        "trois cinq"
+        "quatre cinq"
+        "deux deux";
+        
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .container-bis {
+        grid-template-areas: 
+        "un un trois"
+        "cinq cinq cinq"
+        "quatre deux deux";
+        
+        
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    
+    .container-bis{
+        grid-template-areas: 
+        "un un trois cinq"
+        "quatre deux deux cinq";
+
+    }
+    .big-square-purple {
+        margin-top: 0;
+        
+    } 
+    
+}
+
+
+
+
+    
+    
+
